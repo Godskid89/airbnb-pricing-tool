@@ -46,8 +46,8 @@ Pyspark was used to build the model using the gradient-boosted trees regression 
 Flask was used to build the API using the flask server
 
 ## What can be done better
-Replacing Flask server with a more scalable and reliable server: Using Nginx instead of Flask’s built-in server, Nginx is a lot more scalable and reliable. As a company shipping product for millions of customers, reliability is a very important factor.
-Containerization - Containerizing this app using Docker for faster and smoother deployment, Docker allows for smoother deployments and more reliability. This will also aid microservice architecture that will be implemented
+- Replacing Flask server with a more scalable and reliable server: Using Nginx instead of Flask’s built-in server, Nginx is a lot more scalable and reliable. As a company shipping product for millions of customers, reliability is a very important factor.
+- Containerization - Containerizing this app using Docker for faster and smoother deployment, Docker allows for smoother deployments and more reliability. This will also aid microservice architecture that will be implemented
 
 ## To run the this Machine Learning App
 ```
@@ -58,5 +58,5 @@ python train.py #update the model
 python app.py #to start the app
 ```
 Now the server is running POST request http://0.0.0.0:5000//getprice
-The request to get prediction should be in JSON format, using variables similar to the data in the data folder
-To check the notebook
+The request to get prediction should be in JSON format, using variables similar to the data in the [data folder](https://github.com/Godskid89/airbnb-pricing-tool/tree/master/api/data)
+To check the [notebook](https://github.com/Godskid89/airbnb-pricing-tool/tree/master/notebook)
