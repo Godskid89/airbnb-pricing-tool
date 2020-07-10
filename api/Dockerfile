@@ -13,3 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /home/project/app
 
 COPY ./models /home/project/app/models
+WORKDIR /home/project/app
+

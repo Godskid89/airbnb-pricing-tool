@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import sys
-sys.path.extend(['/Users/josehpoladokun/PycharmProjects/pricing_model/api'])
 
 try:
     # Load libraries

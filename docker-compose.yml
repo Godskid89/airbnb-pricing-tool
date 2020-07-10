@@ -3,7 +3,7 @@ version: '3'
 services:
 
   api:
-    container_name: pricing_api # Name can be anything
+    container_name: pricing_api
     restart: always
     build: ./api
     ports:
@@ -18,3 +18,5 @@ services:
       - "8001:8001"
     depends_on:
       - api
+
+  

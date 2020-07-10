@@ -4,9 +4,6 @@ from flask import jsonify, request, Flask
 import os
 import sys
 
-sys.path.extend(['/Users/josehpoladokun/PycharmProjects/pricing_model/api'])
-
-
 
 # Load libraries
 from pyspark.ml.pipeline import Estimator, Transformer

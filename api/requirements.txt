@@ -10,3 +10,6 @@ requests==2.23.0
 #Rtree==0.9.4
 scipy==1.4.1
 gunicorn
+
+
+sys.path.extend(['/Users/josehpoladokun/PycharmProjects/pricing_model/api'])
