@@ -1,6 +1,6 @@
-# Scalable Machine Learning with PySpark + Flask + Ngnix + Docker
+# Scalable Machine Learning with PySpark + Flask
 
-I approached this project with mindset of working terabytes of data. I use pyspark for the model, nginx, gunicorn and Docker Compose to create a scalable, reliable and deployable your machine learning model using Microservice architecture.
+I approached this project with mindset of working terabytes of data. I use pyspark for the model, and flask as the server.
 
 ## Approach for building the model.
 I use one of the data listings data provided. The goal is to predict the price of the airbnb listings using the data 
@@ -50,25 +50,27 @@ The specific mechanism for re-labeling instances is defined by a loss function. 
 The gradient boosting method assumes a real-valued y and seeks an approximation in the form of a weighted sum of functions from some class, called base (or weak) learners (poor predictions).
 In accordance with the empirical risk minimization principle, the method tries to find an approximation that minimizes the average value of the loss function on the training set, i.e., minimizes the empirical risk. It does so by starting with a model, consisting of a constant function. 
 
+
 ### Microservice approach to developing API and deployment
 
 <b> Pyspark </b> was used to build the model using gradient-boosted trees regression algorithm which was explained, Pyspark is the framework with probably the highest potential to when it comes to implementing Machine Learning and Big Data. It runs fast (up to 100x faster than traditional Hadoop MapReduce due to in-memory operation, offers robust, distributed, fault-tolerant data objects (called RDD), and integrates beautifully with the world of machine learning and graph analytics through supplementary packages like Mlib and GraphX.
 
-<b> Flask </b> was used to to build the API but I replaced the default Flask webserver with <b> nginx </b> as Flask’s built-in server is not suitable for production but nginx is a lot more scalable and reliable. As a company shipping products for millions of customers, reliablitity is a very important factor.
+Flask was used to to build the API using the flask server 
 
-After, this I built a <b> Docker </b> container for the Machine Learning app, Docker allows for smoother deployments, and more reliability
+## What can be done better
+- Replacing Flask server with a more scalable and reliable server: Using nginx instead Flask’s built-in server, nginx is a lot more scalable and reliable. As a company shipping products for millions of customers, reliablitity is a very important factor.
 
-To run the this app
+- Containerization - Containerizing this app using Docker for faster and smoother deployment, Docker allows for smoother deployments, and more reliability. This will also aid microservice architecture
 
-- Clone the repository 
-- Run docker-compose up
-
+## To run the this Machine Learning App
 ```
 git clone https://github.com/Godskid89/airbnb-pricing-tool.git
-docker-compose up
+cd api
+pip install -r requirements.txt (or run it in anaconda environment)
+python train.py #update the model
+python app.py #to start the app
 ```
+Now the server is running
+POST request ```http://0.0.0.0:5000//getprice```
 
-The request to get prediction should be in JSON format
-
-This container can then be  deployed in cloud service of our choice!
-
+The request to get prediction should be in JSON format, using variables similar to the data in data folder
