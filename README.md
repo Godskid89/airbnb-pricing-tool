@@ -45,9 +45,10 @@ The gradient boosting method assumes a real-valued y and seeks an approximation 
 Pyspark was used to build the model using the gradient-boosted trees regression algorithm, Pyspark is the framework with probably the highest potential to when it comes to implementing Machine Learning in Big Data. It runs fast (up to 100x faster than traditional Hadoop MapReduce due to in-memory operation, offers robust, distributed, fault-tolerant data objects (called RDD), and integrates beautifully with the world of machine learning and graph analytics through supplementary packages like Mlib and GraphX.
 Flask was used to build the API using the flask server
 
-## What can be done better
-- Replacing Flask server with a more scalable and reliable server: Using Nginx instead of Flask’s built-in server, Nginx is a lot more scalable and reliable. As a company shipping product for millions of customers, reliability is a very important factor.
+## What can be done better for scaling
+- Replacing Flask server with a more scalable and reliable server - Using Nginx instead of Flask’s built-in server, Nginx is a lot more scalable and reliable. As a company shipping product for millions of customers, reliability is a very important factor.
 - Containerization - Containerizing this app using Docker for faster and smoother deployment, Docker allows for smoother deployments and more reliability. This will also aid microservice architecture that will be implemented
+- Deployment - Deployment on cloud services (AWS or GCP) and building pipeline from data storage infrastructure on Amazon (Redshift or S3 Bucket) or GCP (Cloud Storage or Bigquery) or any other service in the architecture 
 
 ## To run the this Machine Learning App
 ```
