@@ -58,5 +58,7 @@ python train.py #update the model
 python app.py #to start the app
 ```
 Now the server is running POST request http://0.0.0.0:5000//getprice
+
 The request to get prediction should be in JSON format, using variables similar to the data in the [data folder](https://github.com/Godskid89/airbnb-pricing-tool/tree/master/api/data)
-To check the [notebook](https://github.com/Godskid89/airbnb-pricing-tool/tree/master/notebook)
+
+Check the [notebook](https://github.com/Godskid89/airbnb-pricing-tool/tree/master/notebook)
