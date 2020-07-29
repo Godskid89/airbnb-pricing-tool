@@ -114,7 +114,7 @@ h5py==2.10.0
 HeapDict==1.0.1
 html5lib==1.0.1
 htmlmin==0.1.12
-httplib2==0.17.0
+httplib2==0.18.0
 idna==2.8
 ijson==2.6.1
 ImageHash==4.1.0
