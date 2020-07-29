@@ -3,7 +3,7 @@
 I approached this project with the mindset of working on terabytes of data. I implement it using PySpark for the modeling, and Flask as the server.
 
 ## Approach for building the model.
-I use one of the listings data provided https://recruitingupload.blob.core.windows.net/scientist202006/listings_processed.parquet.  The goal is to predict the price of the Airbnb listings using the data using machine learning.
+I use one of the listings data [here](https://recruitingupload.blob.core.windows.net/scientist202006/listings_processed.parquet).  The goal is to predict the price of the Airbnb listings using the data using machine learning.
 
 ## Data Exploration
 I did a little exploration, I calculated the skewness summary statistics of our target variable (price) and that of numerical variables.
