@@ -234,7 +234,7 @@ pycrypto==2.6.1
 pycurl==7.43.0.3
 pydata-google-auth==1.1.0
 pyflakes==2.1.1
-Pygments==2.4.2
+Pygments==2.7.4
 pylint==2.4.2
 PyMySQL==0.9.3
 pynvx==1.0.0
