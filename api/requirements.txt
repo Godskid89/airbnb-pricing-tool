@@ -325,7 +325,7 @@ turicreate==6.3
 unicodecsv==0.14.1
 Unidecode==1.1.1
 uritemplate==3.0.1
-urllib3==1.24.2
+urllib3==1.26.5
 visions==0.4.4
 wasabi==0.6.0
 wcwidth==0.1.7
