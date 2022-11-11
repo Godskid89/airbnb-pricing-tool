@@ -247,7 +247,7 @@ pyrsistent==0.15.4
 pysbd==0.2.3
 pyshp==2.1.0
 PySocks==1.7.1
-pyspark==2.4.5
+pyspark==3.2.2
 pyspark2pmml==0.5.1
 pytest==5.2.1
 pytest-arraydiff==0.3
